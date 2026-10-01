@@ -1,0 +1,11 @@
+{
+  "id": "arun_icecreams_correct",
+  "entity": "Arun Icecreams",
+  "question": "What is Arun Icecreams's official Instagram account?",
+  "source_text": "Arun Icecreams's official Instagram account is @arunicecreams.\nhttps://www.instagram.com/arunicecreams/?hl=en\nArun Icecreams (@arunicecreams)\n54K followers · 1 following · 567 posts · @arunicecreams: \"The official Instagram page of Arun Icecreams. Icecreams made of rich milk and cream.",
+  "candidate": "arunicecreams",
+  "ground_truth": "correct",
+  "correct_answer": "arunicecreams",
+  "provenance": "Real Google AI Overview + organic result text, captured live 2026-09-29 (7th Sense production run for Arun Icecreams). Verbatim.",
+  "why_this_case_matters": "The counterweight to the misattribution cases above: a gate that rejects everything scores perfectly on those and is useless. This case measures the real cost of entitygate's checks -- a genuinely correct, real, 54K-follower account must still pass shape + verbatim + entity-match."
+}

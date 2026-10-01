@@ -1,0 +1,12 @@
+{
+  "id": "prashanth_timedical1",
+  "entity": "Prashanth Hospitals",
+  "question": "What is Prashanth Hospitals' official Instagram account?",
+  "source_text": "Journal of Hospital Management and Health Policy\nPrashanth Hospitals and the broader Indian healthcare market are currently being shaped by rapid digital transformation, patient-centric delivery models, and expanding regional footprints.\nInstagram\n·timedical1\n +1\nKey Market Trends\nAI-Powered Diagnostics & Workflows: Hospitals are increasingly adopting artificial intelligence to assist with predictive analytics, real-time clinical decisions.",
+  "candidate": "timedical1",
+  "ground_truth": "misattributed",
+  "correct_answer": "not available in this text",
+  "provenance": "Real AI Overview text, captured live 2026-08-23 against a real production run for Prashanth Hospitals (7th Sense, a company-intelligence SaaS). Verbatim, unedited except for truncation around the relevant passage.",
+  "why_it_fools_naive_extraction": "'timedical1' is a real, correctly-shaped Instagram handle that genuinely appears in the text, immediately after the word 'Instagram' -- exactly the pattern a naive extractor looks for. But it's cited by Google's own AI Overview as a general industry source for the 'Key Market Trends' section, not as Prashanth's own account. Nothing in the surrounding text claims ownership; a naive extractor infers it from proximity alone.",
+  "why_groundedness_checks_miss_it": "The claim 'Prashanth Hospitals' Instagram is timedical1' is NOT directly stated, but a weaker/common groundedness check (does the context contain this handle near this company's name) returns true, because the handle IS in the context, right next to a paragraph naming Prashanth Hospitals. Groundedness answers 'is this in the context', not 'does the context actually claim this belongs to THIS entity' -- the two questions only coincide when the answer is correct."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "havmor_correct",
+  "entity": "Havmor",
+  "question": "What is Havmor's official Instagram account?",
+  "source_text": "Havmor's official global/main Instagram account is Havmor Ice Creams (@havmoricecreams).\nhttps://www.instagram.com/havmoricecreams/?hl=en\nHavmor Ice Creams (@havmoricecreams) • Instagram photos and videos",
+  "candidate": "havmoricecreams",
+  "ground_truth": "correct",
+  "correct_answer": "havmoricecreams",
+  "provenance": "Real Google AI Overview + organic result text, captured live 2026-09-29 (7th Sense production run for Havmor). Verbatim. Notably also contains a real lookalike/franchise account pattern in the broader real SERP (e.g. 'havmor_icecream', a different real account) that a weaker extractor could confuse with the official one -- this case's source_text is narrowed to the organic result that unambiguously names the OFFICIAL account.",
+  "why_this_case_matters": "A second real, correct, positive case -- one is not enough to claim a real false-negative rate."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "sundaram_residency_finance",
+  "entity": "Sundaram Residency",
+  "question": "Who are Sundaram Residency's main competitors?",
+  "source_text": "Sundaram Finance - Competitors/Peers Analysis - Trendlyne. All subsidiary companies of the Sundaram Finance Limited provide financing and leasing activities. Address: Sree Devi Residency, No:16/14, Sundaram street.",
+  "candidate": "Sundaram Finance",
+  "ground_truth": "misattributed",
+  "correct_answer": "not available in this text",
+  "provenance": "Real captured search-result titles/snippets, 2026-08-19 (7th Sense production run for Sundaram Residency, a hotel/event-venue business). Verbatim.",
+  "why_it_fools_naive_extraction": "Sundaram Finance is a real, well-known, correctly-shaped company name, verbatim in a result that visibly uses the word 'Competitors' in its own title. A naive extractor sees a real company name in a competitor-framed result and accepts it.",
+  "why_groundedness_checks_miss_it": "Fully grounded -- the name is really there, in a really competitor-framed result. A groundedness/entailment check has no basis to object.",
+  "known_limitation": "This case is a DISCLOSED FAILURE of entitygate's current (v0.1) anchor-matching gate, not a win: 'Sundaram Finance' and 'Sundaram Residency' share the same distinctive brand token ('Sundaram'), so matches_entity() incorrectly accepts this pair -- entitygate.match.matches_entity('Sundaram Finance', 'Sundaram Residency') returns True. The two businesses are in completely unrelated industries (NBFC financing vs. hospitality) and anchor-matching alone cannot see that; it needs a complementary category/industry-conflict check, which is out of scope for entitygate v0.1 -- see README's Known Limitations and Roadmap."
+}

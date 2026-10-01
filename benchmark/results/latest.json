@@ -1,0 +1,68 @@
+[
+  {
+    "case": "arun_icecreams_correct",
+    "ground_truth": "correct",
+    "naive_accepted": true,
+    "naive_correct": true,
+    "faithfulness_accepted": true,
+    "faithfulness_correct": true,
+    "entitygate_accepted": true,
+    "entitygate_correct": true,
+    "entitygate_reason": "ok"
+  },
+  {
+    "case": "havmor_correct",
+    "ground_truth": "correct",
+    "naive_accepted": true,
+    "naive_correct": true,
+    "faithfulness_accepted": true,
+    "faithfulness_correct": true,
+    "entitygate_accepted": true,
+    "entitygate_correct": true,
+    "entitygate_reason": "ok"
+  },
+  {
+    "case": "kauvery_apollo_collision",
+    "ground_truth": "misattributed",
+    "naive_accepted": false,
+    "naive_correct": true,
+    "faithfulness_accepted": false,
+    "faithfulness_correct": true,
+    "entitygate_accepted": false,
+    "entitygate_correct": true,
+    "entitygate_reason": "no_entity_match"
+  },
+  {
+    "case": "prashanth_timedical1",
+    "ground_truth": "misattributed",
+    "naive_accepted": true,
+    "naive_correct": false,
+    "faithfulness_accepted": true,
+    "faithfulness_correct": false,
+    "entitygate_accepted": false,
+    "entitygate_correct": true,
+    "entitygate_reason": "no_entity_match"
+  },
+  {
+    "case": "sundaram_residency_finance",
+    "ground_truth": "misattributed",
+    "naive_accepted": false,
+    "naive_correct": true,
+    "faithfulness_accepted": false,
+    "faithfulness_correct": true,
+    "entitygate_accepted": true,
+    "entitygate_correct": false,
+    "entitygate_reason": "ok"
+  },
+  {
+    "case": "zoho_gartner_citation",
+    "ground_truth": "misattributed",
+    "naive_accepted": false,
+    "naive_correct": true,
+    "faithfulness_accepted": false,
+    "faithfulness_correct": true,
+    "entitygate_accepted": false,
+    "entitygate_correct": true,
+    "entitygate_reason": "no_entity_match"
+  }
+]

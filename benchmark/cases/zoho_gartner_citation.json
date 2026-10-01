@@ -1,0 +1,12 @@
+{
+  "id": "zoho_gartner_citation",
+  "entity": "Zoho",
+  "question": "Who are Zoho's main competitors?",
+  "source_text": "Top Zoho Competitors & Alternatives 2026 | Gartner Peer Insights. According to Gartner, HubSpot and Salesforce are the top alternatives to Zoho CRM.",
+  "candidate": "Gartner",
+  "ground_truth": "misattributed",
+  "correct_answer": "HubSpot, Salesforce",
+  "provenance": "Real captured search-result title and snippet, 2026-08-17 (7th Sense production run for Zoho). Verbatim.",
+  "why_it_fools_naive_extraction": "'Gartner' appears as a capitalized proper noun, right next to the company's name, in a result whose own title is literally 'Top Zoho Competitors ... | Gartner Peer Insights' -- a naive extractor pattern-matching on 'proper noun near the target company, in a competitor-labeled result' picks it up as a competitor. It's actually the research firm that PUBLISHED the competitor list, not an item on it.",
+  "why_groundedness_checks_miss_it": "Gartner really is named in text that's really about Zoho's competitors -- fully grounded by any text-overlap or embedding-similarity measure. The question a groundedness check never asks is the one that actually matters here: is this name playing the ROLE of a competitor in this sentence, or the role of a citation source describing the list. Entitygate's anchor-match happens to also reject this one on a simpler ground: 'Gartner' shares no brand token with 'Zoho' at all."
+}

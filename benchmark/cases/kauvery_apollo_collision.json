@@ -1,0 +1,12 @@
+{
+  "id": "kauvery_apollo_collision",
+  "entity": "Kauvery Hospital",
+  "question": "What is Kauvery Hospital's official Instagram account?",
+  "source_text": "Apollo Hospitals official page: instagram.com/apollohospitals -- part of the broader hospital network sector alongside Kauvery, Prashanth, and other regional chains.",
+  "candidate": "instagram.com/apollohospitals",
+  "ground_truth": "misattributed",
+  "correct_answer": "not available in this text",
+  "provenance": "Minimal reproduction of a real documented production bug (7th Sense, 2026-08-22): the first version of this project's entity-match logic used 'any significant name token matches', which accepted this exact URL as the handle for BOTH Kauvery Hospital and Prashanth Hospitals, because all three names share the generic word 'hospital(s)'. This source text is a reconstructed minimal example isolating that real failure, not a raw search-engine capture (unlike prashanth_timedical1.json).",
+  "why_it_fools_naive_extraction": "A real, correctly-shaped, verbatim-present Instagram URL, in a sentence that explicitly lists Kauvery alongside the company the URL actually belongs to. A naive extractor sees 'Kauvery' and a nearby real handle and connects them.",
+  "why_groundedness_checks_miss_it": "The handle is genuinely, verbatim present in text that genuinely mentions Kauvery -- a groundedness check over 'is there support for a Kauvery Instagram handle in this context' can pass, because the words co-occur. It never asks whether the handle and the mention of Kauvery are talking about the same entity, only whether both exist in the retrieved text."
+}
